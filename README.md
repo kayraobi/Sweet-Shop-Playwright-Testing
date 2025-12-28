@@ -179,7 +179,7 @@ The primary objectives of this testing effort are:
 |---|---|
 | **Test Case ID** | TC_11 |
 | **Test Case Title** | Verify Basket Navigation |
-| **Description** | Check whether users can navigate to the basket page. |
+| **Description** | Check whether users can navigate to the basket page,also this test include Boundary test by adding items from sugars section. |
 | **Test Steps** | • Navigate to the home page<br>• Click on the basket button<br>• Verify navigation to basket page |
 | **Expected Result** | User is successfully navigated to the basket page. |
 | **Pass / Fail Criteria** | • **Pass:** User is redirected to basket page<br>• **Fail:** Navigation fails or incorrect page is displayed |
