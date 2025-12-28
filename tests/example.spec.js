@@ -86,7 +86,7 @@ test.describe("Basket Page Functional Tests", () => {
 		await website.basket_billing_adr_card_number_test("");
 		await website.basket_billing_adr_expiration_test("");
 		await website.basket_billing_adr_CVV_test("");
-		await website.basket_billing_adr_promo_test("lflf");
+		await website.basket_billing_adr_promo_test("");
 		await website.basket_billing_adr_empty_basket_button_test();
 		await website.basket_billing_adr_finish_button_test();
 		await expect(page).toHaveURL(/.*basket.*/);
@@ -153,7 +153,7 @@ test.describe("Login Page", () => {
 	test("Login - Negative (No email)", async ({ page }) => {
 		await website.login("password123", "");
 		await expect(page).toHaveURL(/.*login.*/);
-		test("Verify User Login - Negative (Invalid email )", async ({ page }) => {
+		test("Login - Negative (Invalid email)", async ({ page }) => {
 			await website.login("password123", "test");
 
 			await expect(page).toHaveURL(/.*login.*/);
