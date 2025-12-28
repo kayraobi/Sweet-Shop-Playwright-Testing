@@ -1,0 +1,52 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Sweet Shop" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - button "Toggle navigation" [ref=e5]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Sweets" [ref=e9] [cursor=pointer]:
+            - /url: /sweets
+        - listitem [ref=e10]:
+          - link "About" [ref=e11] [cursor=pointer]:
+            - /url: /about
+        - listitem [ref=e12]:
+          - link "Login" [ref=e13] [cursor=pointer]:
+            - /url: /login
+          - text: (current)
+        - listitem [ref=e14]:
+          - link "0 Basket" [ref=e15] [cursor=pointer]:
+            - /url: /basket
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - heading "Login" [level=1] [ref=e18]
+      - paragraph [ref=e19]: Please enter your email address and password in order to login to your account.
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - text: Email address
+          - textbox "Email address" [ref=e24]:
+            - /placeholder: you@example.com
+          - generic [ref=e25]: Please enter a valid email address.
+        - generic [ref=e26]:
+          - text: Password
+          - textbox "Password" [ref=e27]
+          - generic [ref=e28]: Please enter a valid password.
+        - button "Login" [ref=e29]
+      - generic [ref=e30]:
+        - link "twitter":
+          - /url: "#"
+          - img "twitter"
+        - link "facebook":
+          - /url: "#"
+          - img "facebook"
+        - link "linkedin":
+          - /url: "#"
+          - img "linkedin"
+  - contentinfo [ref=e31]:
+    - paragraph [ref=e33]: Sweet Shop Project 2018
+```
